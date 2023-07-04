@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "zanaretcoolmod",
+	"version": "${version}",
+	"name": "zanaretcoolmod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Zanaret"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/zanaretcoolmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "net.zanaret.coolmod.CoolMod"
+		],
+		"fabric-datagen": [
+			"net.zanaret.coolmod.CoolModDataGenerator"
+		],
+		"client": [
+			"net.zanaret.coolmod.CoolModClient"
+		]
+	},
+	"mixins": [
+		"zanaretcoolmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
